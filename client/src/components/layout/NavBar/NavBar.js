@@ -10,7 +10,7 @@ const NavBar = props => {
     <nav className='navbar_navigation'>
       <div className='logo'>
         <h2>
-          <Link to='/'>HypedGoods</Link>
+          <Link to='/'>Splizzy</Link>
         </h2>
       </div>
       <ul className='nav-links'>
