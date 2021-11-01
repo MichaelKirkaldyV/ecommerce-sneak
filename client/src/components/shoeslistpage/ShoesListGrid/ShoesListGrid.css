@@ -1,0 +1,73 @@
+.row {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.wrapper-shoes-list-grid {
+  width: 80%;
+  display: inline-block;
+}
+
+.shoes-grid-column {
+  padding: 2px;
+}
+
+.shoes-grid-column a {
+  text-decoration: none;
+}
+
+.shoes-list-image {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.shoes-list-image img {
+  width: 90%;
+}
+
+.shoes-list-info {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 0.8em;
+  color: black;
+}
+
+.shoes-list-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.shoes-list-name {
+  margin-top: -15px;
+  text-transform: capitalize;
+  color: rgb(153, 145, 145);
+}
+
+.shoes-list-price {
+  margin-top: -8px;
+  font-weight: 600;
+}
+
+.shoes-soldout {
+  opacity: 0.6;
+}
+
+.shoes-grid-column {
+  animation: animateShoesGrid 2s ease;
+}
+
+@keyframes animateShoesGrid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* for mobile phone(iphone x and lower) */
+@media screen and (max-width: 768px) {
+  .wrapper-shoes-list-grid {
+    width: 100%;
+  }
+}

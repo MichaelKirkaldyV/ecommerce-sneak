@@ -1,0 +1,154 @@
+.wrapper-shoes-list-filter {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.shoes-list-filter-content {
+  display: block;
+}
+
+.show-filter-button {
+  display: none;
+}
+
+/* .shoes-list-filter-content-mobile {
+  display: none;
+} */
+
+/* for filter */
+.found-item-container {
+  border-top: 1px solid rgb(235, 227, 227);
+  border-bottom: 1px solid rgb(214, 195, 195);
+  padding: 0;
+  text-align: center;
+  height: 3.5em;
+  line-height: 3.5em;
+}
+
+/* design this later */
+.filter-refineby {
+  display: none;
+}
+
+.filter-container {
+  border-bottom: 1px solid rgb(214, 195, 195);
+}
+
+.custom-checkbox label {
+  text-transform: capitalize;
+}
+
+.filter-options-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  text-transform: uppercase;
+  height: 3em;
+  line-height: 3em;
+  font-weight: 700;
+}
+
+.filter-options-container button {
+  width: 80%;
+  border: none;
+  background: transparent;
+  text-align: right;
+}
+
+.filter-options-container button:focus {
+  outline: none;
+}
+
+.filter-options {
+  padding: 0 1em;
+  margin-top: -0.5em;
+  margin-bottom: 0.7em;
+}
+.filter-show {
+  display: block;
+}
+
+.filter-hide {
+  display: none;
+}
+
+.filter-size-options {
+  text-align: center;
+}
+
+/* SIZE FILTER */
+.size-filter-ul {
+  width: 100%;
+  justify-content: space-between;
+  /* background: pink; */
+  padding: 0 7px;
+  font-size: 14px;
+}
+
+.size-filter-ul li {
+  width: 22%;
+  padding: 7px;
+  text-align: center;
+  display: inline-block;
+  margin: 2px;
+  border: 1px solid rgb(196, 181, 181);
+}
+
+/* for mobile phone(iphone x and lower) */
+@media screen and (max-width: 768px) {
+  .wrapper-shoes-list-filter {
+    width: 100%;
+    margin: 0.5em auto;
+  }
+
+  .show-filter-button {
+    display: block;
+  }
+
+  .found-item-container {
+    display: none;
+  }
+
+  .filter-options-container {
+    font-size: 13px;
+  }
+
+  .filter-options label {
+    font-size: 13px;
+  }
+
+  /* SIZE FILTER */
+  .size-filter-ul {
+    width: 100%;
+    justify-content: space-between;
+    /* background: pink; */
+    padding: 0 7px;
+    font-size: 14px;
+  }
+
+  .size-filter-ul li {
+    width: 22%;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 3px;
+    border: 1px solid rgb(196, 181, 181);
+  }
+
+  .shoes-list-filter-mobile-animate {
+    animation: moveInTopLong 0.3s ease-in-out;
+  }
+
+  @keyframes moveInTopLong {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+}

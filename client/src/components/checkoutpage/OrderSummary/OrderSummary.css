@@ -1,0 +1,257 @@
+.itemsummary-container {
+  width: 50%;
+
+  text-align: right;
+  padding: 2em 0.5em 0 2em;
+  /* background: green; */
+}
+
+.header-itemsummary {
+  height: 50px;
+  text-align: center;
+  border-bottom: 1px solid rgba(226, 203, 203, 0.658);
+  margin-bottom: 20px;
+}
+
+.header-itemsummary h1 {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.itemsummary {
+  border-bottom: 1px solid black;
+}
+
+.itemsummary > *:last-child {
+  border-bottom: none;
+}
+
+.item-row {
+  display: flex;
+  padding: 0.5em;
+  border-bottom: 1px solid rgb(236, 221, 221);
+  margin: 5px 0 0 0;
+  font-size: 0.72em;
+}
+
+.itemimage {
+  width: 30%;
+  text-align: left;
+  /* background: pink; */
+}
+
+.iteminfo {
+  width: 56%;
+  text-align: left;
+  /* font-size: 0.74em; */
+  padding: 5px;
+  /* background: aqua; */
+}
+
+.itemtotal {
+  width: 14%;
+  /* font-size: 0.74em; */
+  /* background: orange; */
+}
+
+.itemimage img {
+  width: 90%;
+}
+
+.p-margintop {
+  margin-top: -10px;
+}
+
+.p-margintop2 {
+  margin-top: -17px;
+}
+
+.p-margintop3 {
+  margin-top: -14px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bolder {
+  font-weight: 700;
+}
+
+/* item summary total!!!!!!!!!!!!!!!!!!!!!!!! */
+.itemsummary-total {
+  width: 100%;
+  /* padding: 0 0.5em; */
+}
+
+.itemsummary-total table {
+  width: 100%;
+  margin-top: 0.3em;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+
+.itemsummary-total table tr {
+  height: 30px;
+}
+
+.itemsummarytable-left-col {
+  text-align: left;
+  padding-left: 0.7em;
+}
+
+.itemsummarytable-right-col {
+  text-align: right;
+  padding-right: 0.7em;
+  text-transform: none;
+}
+
+.summarytotal-text-bold {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.table-top-border {
+  border-top: 1px solid black;
+}
+
+.return-to-cart-button {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.itemsummary-mobile-toggler {
+  display: none;
+}
+
+/* for mobile phone(iphone x and lower) */
+@media screen and (max-width: 768px) {
+  .display-enter {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+
+  .display-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: 300ms, transform 300ms;
+  }
+
+  .display-exit {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  .display-exit-active {
+    opacity: 0;
+    transform: translateY(-20%);
+    transition: 300ms, transform 300ms;
+  }
+
+  .itemsummary-container {
+    width: 100%;
+    text-align: left;
+    border-right: none;
+    /* This is the order of flex box, this brings it on top */
+    order: 0;
+  }
+
+  .bottomBorder {
+    border-bottom: 1px solid rgb(163, 129, 129);
+  }
+
+  .header-itemsummary {
+    display: none;
+  }
+
+  /* .header-itemsummary h1 {
+    text-transform: uppercase;
+    font-size: 17px;
+  } */
+
+  .itemsummary-container {
+    width: 100%;
+    display: block;
+    text-align: right;
+    padding: 0;
+  }
+
+  .itemsummary {
+    border-bottom: 1px solid rgb(236, 221, 221);
+  }
+
+  .item-row {
+    padding: 0.5em;
+    border-bottom: 1px solid rgb(236, 221, 221);
+    margin: 5px 0 0 0;
+    font-size: 0.65em;
+    height: 100px;
+  }
+
+  .itemimage {
+    width: 40%;
+    text-align: left;
+  }
+
+  .iteminfo {
+    width: 45%;
+    text-align: left;
+    padding: 3px;
+  }
+
+  .itemtotal {
+    width: 15%;
+  }
+
+  .itemimage img {
+    width: 85%;
+    margin-left: 6px;
+  }
+
+  .table-top-border {
+    border-top: 1px solid rgb(236, 221, 221);
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .itemsummary-mobile-toggler {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(242, 245, 242);
+    height: 55px;
+    padding: 0 10px;
+    border-bottom: 1px solid rgb(218, 247, 212);
+    position: sticky;
+    z-index: 10;
+  }
+
+  .itemsummary-mobile-toggler-right {
+    width: 35%;
+    text-align: right;
+    line-height: 55px;
+    font-size: 17px;
+  }
+
+  .itemsummary-mobile-toggler-left {
+    width: 65%;
+    text-align: left;
+    line-height: 55px;
+    font-size: 14px;
+  }
+
+  .itemsummary-mobile-toggler-left span {
+    font-size: 11px;
+  }
+}

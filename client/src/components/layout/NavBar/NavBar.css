@@ -1,0 +1,187 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5vh;
+  background-color: #0a0a0a;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.logo {
+  width: 25%;
+  text-align: left;
+  font-family: 'Permanent Marker', cursive;
+  padding-left: 40px;
+}
+
+.logo h2 a {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 29px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 55%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px 10px;
+  margin-top: 15px;
+}
+
+.right-nav-links {
+  display: flex;
+  justify-content: normal;
+  width: 15%;
+  margin: 0;
+}
+
+.account-nav-item {
+  margin-right: 30px;
+}
+
+.nav-links li,
+.right-nav-links li {
+  list-style: none;
+}
+
+.nav-links a,
+.right-nav-links a {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.right-nav-links a {
+  font-size: 18px;
+}
+
+.right-nav-links span {
+  font-size: 0.6em;
+  font-weight: bold;
+  background: rgb(223, 37, 37);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 5px;
+  left: -8px;
+}
+
+/************** BURGER BUTTON ************************/
+.nav-burger {
+  display: none;
+}
+
+/**************** SIDE DRAWER ***************/
+
+/* FIX THE TOP, LEFT, BOTTOM, RIGHT AND THE TRANSFORM AND Z-INDEX */
+.side-drawer {
+  height: 100vh;
+  background: rgb(24, 23, 23);
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 70%;
+  top: 1;
+  left: 0;
+  z-index: 200;
+  transform: translateX(143%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.side-drawer.open {
+  transform: translateX(43%);
+}
+
+.drawer-toggleButton {
+  margin: 5px 20px;
+  color: white;
+  font-size: 30px;
+  text-align: right;
+}
+
+/* for mobile phone(iphone x and lower) */
+@media screen and (max-width: 768px) {
+  nav {
+    min-height: 7vh;
+  }
+
+  .logo {
+    width: 65%;
+    padding-left: 25px;
+  }
+
+  .logo h2 a {
+    letter-spacing: 1px;
+    font-size: 23px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .right-nav-links {
+    width: 20%;
+    padding: 0px;
+    justify-content: normal;
+    margin: 0;
+    margin-right: 5px;
+  }
+
+  .account-nav-item {
+    margin-right: 17px;
+  }
+
+  .nav-burger {
+    width: 15%;
+    padding-left: 2px;
+    display: block;
+  }
+
+  .burger-button {
+    display: flex;
+  }
+
+  .right-nav-links span {
+    top: 6px;
+    left: -7px;
+  }
+
+  /**************** SIDE DRAWER ***************/
+  .nav-links-mobile {
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .nav-links-mobile ul li a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .nav-links-mobile ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-links-mobile li {
+    padding: 15px;
+    border-bottom: 1px solid rgb(75, 73, 73);
+    margin-left: 0px;
+  }
+
+  .nav-links-mobile li.first {
+    border-top: 1px solid rgb(75, 73, 73);
+  }
+}

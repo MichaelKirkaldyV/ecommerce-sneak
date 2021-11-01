@@ -1,0 +1,101 @@
+.wrapper-latestrelease-homepage {
+  margin: 2em 0em 1em 0em;
+}
+
+.header-latestrelease {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.8em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.grid-latestrelease {
+  margin-top: -15px;
+  text-align: center;
+  border-bottom: solid 1px rgb(241, 230, 230);
+}
+
+.grid-latestrelease-column {
+  margin: 0.5em 0;
+}
+
+.grid-latestrelease-column a {
+  text-decoration: none;
+}
+
+.grid-latestrelease-column:hover {
+  opacity: 0.5;
+}
+
+.shoes-image {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.shoes-image img {
+  width: 95%;
+}
+
+.shoes-info {
+  text-align: center;
+}
+
+.shoe-info p a {
+  text-decoration: none;
+}
+
+.shoes-info {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 0.8em;
+  color: black;
+  font-size: 14px;
+}
+
+.shoes-info-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.shoes-info-name {
+  margin-top: -15px;
+  text-transform: capitalize;
+  color: rgb(153, 145, 145);
+}
+
+.shoes-info-price {
+  margin-top: -8px;
+  font-weight: 600;
+}
+
+.grid-latestrelease button {
+  margin: 1em 0 2em 0;
+}
+
+/* for mobile phone(iphone x and lower) */
+@media screen and (max-width: 768px) {
+  .wrapper-latestrelease-homepage {
+    margin: 1em 0em;
+  }
+
+  .header-latestrelease {
+    font-size: 1.2em;
+  }
+
+  .grid-latestrelease-column {
+    margin: 0.2em 0;
+  }
+
+  .shoes-image {
+    margin-bottom: 0.4em;
+  }
+
+  .shoes-info {
+    font-size: 12px;
+  }
+
+  .grid-latestrelease-column:hover {
+    opacity: 1;
+  }
+}
